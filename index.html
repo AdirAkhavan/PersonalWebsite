@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Adir Akhavan</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="AAFavicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Courgette|Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar" id="navi">
+      <a href="#whoami">About me</a>
+      <a href="#contact-me">Send me an email</a>
+      <a href="#contact-form">Leave your details</a>
+      <a href="#bottom">My social media profiles</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBarResponse()">&#9776;</a>
+    </div>
+
+    <div class="top-container">
+      <img class="cloud" id="cloud1" src="images/cloud.png" alt="cloud">
+      <h1>Adir Akhavan <img class="profilepic" src="images/adir.png" alt="Adir Akhavan" onclick="musicFunc()"> </h1>
+      <h2 class="awebdesigner">A web designer.</h2>
+      <img class="cloud" id="cloud2" src="images/cloud.png" alt="cloud">
+    </div>
+
+    <div class="middle-container appear">
+      <div class="profile">
+        <h2>Hey, click my photo for some background music, a second click will make it pause.</h2>
+        <p class="intro">My name is Adir and I haven't had a day off in 3 months.</p>
+        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CLICK HERE TO RECEIVE 10$ STRAIGHT INTO YOUR BANK ACCOUNT!</a>
+      </div>
+
+      <hr id="whoami">
+
+      <div class="whoami appear">
+        <h2>Who am I?</h2>
+        <div class="details">
+          <h3>About me</h3>
+          <p>Not particularly good at anything.</p>
+        </div>
+        <div class="details">
+          <h3>Education</h3>
+          <p>The University of Life.</p>
+        </div>
+        <div class="details">
+          <h3>Employment</h3>
+          <p>None.</p>
+        </div>
+        <div class="details">
+          <h3>Hobbies</h3>
+          <p>Doing homework and falling asleep in the IDC library. <br>
+            It doesn't matter how many sentences are written here, it still looks good. SO GOOD, let's keep going. <br>
+            Ok let's be professional.. <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel dapibus urna, a facilisis urna.
+            Praesent lacinia pretium nibh, scelerisque molestie risus eleifend sed.
+            Integer lectus massa, cursus at aliquam vitae, gravida at nisl.
+          </p>
+        </div>
+      </div>
+
+      <hr id="contact-me">
+
+      <div class="contact-me appear">
+          <h2 class="getintouch">Get In Touch</h2>
+        <img class="phone-img" src="images/phoneicon.png" alt="Phone">
+        <h3>Business enquiries only.</h3>
+        <p>Just kidding, if you're tired of checking students homework, feel free to send me an email.</p>
+        <a class="contact-me-button" href="mailto:AdirAK18@Gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+
+    <hr id="contact-form">
+
+    <div class="contact-form appear">
+      <img src="images/contact.png" alt="contact me">
+      <form action="submission.html" method="GET">
+        <h2 class="form-sentence">Leave your details below and I'll be in touch.</h2>
+        <div class="user-info">
+          <section>
+            <label for="name">Full name: </label>
+            <input type="text" name="name" id="name" pattern="[A-Za-z ]*" required />
+          </section>
+          <hr class="between-details">
+
+          <section>
+            <label for="phone">Phone number: </label>
+            <input type="number" name="phone" id="phone" required />
+          </section>
+          <hr class="between-details">
+
+          <section>
+            <label for="Email">Email address: </label>
+            <input type="email" name="Email" id="Email" required />
+          </section>
+          <hr class="between-details">
+
+          <section>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" min=18 max=120 required />
+          </section>
+          <hr class="between-details">
+
+          <section>
+            <label for="Gender">Gender: </label>
+            <select name="Gender" id="Gender" required>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Undefined">Undefined</option>
+            </select>
+          </section>
+        </div>
+
+        <section class="submission">
+          <input class="button" type="submit" value="submit" onclick="submitFunc()"/>
+        </section>
+      </form>
+    </div>
+
+    <hr>
+
+    <section class="rate appear">
+      <h3>
+        Let's pretend that I care about your satisfaction from this website.
+      </h3>
+      <div class="siteRating">
+        <label for="ratingField">How much did you enjoy using my site from 0 to 100: <br> </label>
+        <input type="number" id="ratingField" class="ratingField" min=0 />
+        <input type="button" value="Rate Site" class="rateSite button" onclick="rating()" />
+      </div>
+    </section>
+
+    <div class="bottom-container" id="bottom">
+      <a target="_blank" class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a target="_blank" class="footer-link" href="https://www.instagram.com/adir_akhavan/">Instagram</a>
+      <a target="_blank" class="footer-link" href="https://www.facebook.com/adir.akhavan">Facebook</a>
+      <p class="copyright">© 2021 Adir Akhavan.</p>
+    </div>
+
+  </body>
+</html>
