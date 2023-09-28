@@ -1,4 +1,4 @@
-# PersonalWebsite
+# personal-website
 A personal website I created as a home assignment for a university course, using JavaScript, HTML, and CSS. 
 
 To run my website, simply double-click on index.html.
